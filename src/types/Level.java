@@ -1,7 +1,5 @@
 package types;
 
-import java.awt.font.TextHitInfo;
-
 public class Level {
     public String name;
     public char letter;

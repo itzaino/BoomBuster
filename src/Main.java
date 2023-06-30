@@ -1,10 +1,11 @@
 import types.Field;
 import types.Level;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Main {
-   static Field[][] board;
+   static Field[][] board =new Field[8][8];
     static Level[] levels= {
             new Level("Beginner",'B',8,10),
             new Level("Intermediate",'I',16,40),
@@ -29,9 +30,39 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        while(!start){
-            startPrompt();
+        //Dummy Data
+        for(Field[] row:board){
+            //!Reference Error!
+            Arrays.fill(row,new Field());
         }
+        /*
+        testing
 
+        board[1][3].setFlag();
+        board[3][0].setFlag();
+        board[3][0].openField();
+        Field testField=board[0][1];
+        board[0][1].openField();
+
+        for(Field[] row:board){
+            for(Field field:row){
+                System.out.print(field.open + " ");
+            }
+            System.out.println();
+        }
+         */
+        Draw.drawBoard(board);
+
+        /*
+        Type Names
+        [[types.Field@7229724f, types.Field@7229724f, types.Field@7229724f, types.Field@7229724f, types.Field@7229724f, types.Field@7229724f, types.Field@7229724f, types.Field@7229724f],
+        [types.Field@119d7047, types.Field@119d7047, types.Field@119d7047, types.Field@119d7047, types.Field@119d7047, types.Field@119d7047, types.Field@119d7047, types.Field@119d7047],
+        [types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777, types.Field@4eec7777],
+        [types.Field@41629346, types.Field@41629346, types.Field@41629346, types.Field@41629346, types.Field@41629346, types.Field@41629346, types.Field@41629346, types.Field@41629346],
+        [types.Field@6d311334, types.Field@6d311334, types.Field@6d311334, types.Field@6d311334, types.Field@6d311334, types.Field@6d311334, types.Field@6d311334, types.Field@6d311334],
+        [types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0, types.Field@3d075dc0],
+        [types.Field@448139f0, types.Field@448139f0, types.Field@448139f0, types.Field@448139f0, types.Field@448139f0, types.Field@448139f0, types.Field@448139f0, types.Field@448139f0],
+        [types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f, types.Field@7ba4f24f]]
+         */
     }
 }

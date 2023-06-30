@@ -1,9 +1,9 @@
 package types;
 
 public class Field {
-    boolean open;
-    boolean mine;
-    boolean flag;
+    public boolean open;
+    public boolean mine;
+    public boolean flag;
 
     public Field (){
         open =false;

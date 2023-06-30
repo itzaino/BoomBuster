@@ -4,22 +4,22 @@ import types.Level;
 import java.util.Objects;
 
 public class Main {
-   Field[][] board;
+   static Field[][] board;
     static Level[] levels= {
             new Level("Beginner",'B',8,10),
             new Level("Intermediate",'I',16,40),
             new Level("Expert",'E',22,99)
     };
     static boolean start=false;
+    static Level level;
     public static void startPrompt(){
-        start=false;
         System.out.println("Do you want to start a game?");
         System.out.println("Yes: Y");
         System.out.println("No: N");
         if(Objects.equals(Utils.readString(), "Y")){
             System.out.println("How good are you?");
-            for (Level level : levels) {
-                System.out.println(level.name + ": " + level.letter);
+            for (Level levelL : levels) {
+                System.out.println(levelL.name + ": " + levelL.letter);
             }
             start= true;
         }else if(Objects.equals(Utils.readString(), "N")){

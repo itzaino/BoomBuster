@@ -5,6 +5,7 @@ public class Field {
     public boolean mine;
     public boolean flag;
     public int number;
+    //Loop through neibours
 
     public Field (){
         open =false;

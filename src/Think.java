@@ -11,3 +11,5 @@ public class Think {
         Main.board=new Field[Main.level.fieldSize][Main.level.fieldSize];
     }
 }
+
+//Method: Random Mine Generation

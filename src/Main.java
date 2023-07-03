@@ -7,11 +7,11 @@ import java.util.Objects;
 Aufgaben:
 
 Bis Freitag:
-Vinzent, Adrian
-Read Methode
-random Mines Methode
+Vinzent, Adrian:
+Read Methode --> See Utils
+Mine Randomisation --> See Think
 
-Loop through neighbours methode
+Loop through neighbours methode --> See Think & Field
 
 Ainoa:
 Check Draw, if-statements, for simplification

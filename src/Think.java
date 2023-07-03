@@ -14,7 +14,10 @@ public class Think {
         for(Field[] row:Main.board){
             Arrays.setAll(row, i->new Field());
         }
+        //Mine Randomisation --> see bottom, call here
+        //Mine Counter --> loop here, function in Field
+    }
+    public static void mineRandomiser(){
+
     }
 }
-
-//Method: Random Mine Generation

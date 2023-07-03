@@ -5,7 +5,7 @@ public class Field {
     public boolean mine;
     public boolean flag;
     public int number;
-    //Loop through neibours
+    //Field[] neighbours;???
 
     public Field (){
         open =false;

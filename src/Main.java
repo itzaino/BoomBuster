@@ -14,9 +14,15 @@ Mine Randomisation --> See Think
 Loop through neighbours methode --> See Think & Field
 
 Ainoa:
-Check Draw, if-statements, for simplification
-Re-read Game Initiation
 Check Field-Classes & consider Errors
+
+Missing:
+Drawing Numbers
+
+Questions:
+Where should startPrompt() be?
+Should neighbours be an attribute of Field?
+
 */
 public class Main {
    static Field[][] board=new Field[8][8];
@@ -50,6 +56,7 @@ public class Main {
         return levelC;
     }
     public static void main(String[] args) {
+        //startPrompt(); //--> move to Think/Draw?
         Think.gameInitiation("B");
 
         //testing

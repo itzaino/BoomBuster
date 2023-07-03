@@ -5,6 +5,7 @@ public class Field {
     public boolean mine;
     public boolean flag;
     public int number;
+    public String colour;
     //Field[] neighbours;???
 
     public Field (){
@@ -12,6 +13,7 @@ public class Field {
         mine=false;
         flag=false;
         number=0;
+        colour=BackgroundColour.green;
     }
     public void setMine(){
         mine=true;
@@ -30,6 +32,7 @@ public class Field {
         boolean error;
         if(!flag&&!open){
             open = true;
+            colour=BackgroundColour.yellow;
             error = false;
         } else{
             error=true;

@@ -35,13 +35,12 @@ public class Main {
             //!Reference Error!
             Arrays.fill(row,new Field());
         }
-        /*
-        testing
+
+        //testing
 
         board[1][3].setFlag();
         board[3][0].setFlag();
         board[3][0].openField();
-        Field testField=board[0][1];
         board[0][1].openField();
 
         for(Field[] row:board){
@@ -50,7 +49,7 @@ public class Main {
             }
             System.out.println();
         }
-         */
+
         Draw.drawBoard(board);
 
         /*

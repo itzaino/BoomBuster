@@ -4,11 +4,13 @@ public class Field {
     public boolean open;
     public boolean mine;
     public boolean flag;
+    public int number;
 
     public Field (){
         open =false;
         mine=false;
         flag=false;
+        number=0;
     }
     public void setMine(){
         mine=true;
@@ -25,9 +27,9 @@ public class Field {
     }
     public boolean openField(){
         boolean error;
-        if(!open){
-            open=true;
-            error=false;
+        if(!flag&&!open){
+            open = true;
+            error = false;
         } else{
             error=true;
         }

@@ -14,7 +14,7 @@ random Mines Methode
 Loop through neighbours methode
 
 Ainoa:
-Start Prompt & Game Initiation & Draw fixen
+Game Initiation & Draw fixen !!Field Open & Flag
  */
 public class Main {
    static Field[][] board; //=new Field[8][8];
@@ -26,21 +26,26 @@ public class Main {
     public static boolean start=false;
 
     static Level level;
-    public static void startPrompt(){
-        System.out.println("Do you want to start a game?");
-        System.out.println("Yes: Y");
-        System.out.println("No: N");
-        if(Objects.equals(Utils.readString(), "Y")){
-            System.out.println("How good are you?");
-            for (Level levelL : levels) {
-                System.out.println(levelL.name + ": " + levelL.letter);
+    public static String startPrompt(){
+        String levelC="";
+        while(!start){
+            System.out.println("Do you want to start the game?");
+            System.out.println("Yes: Y");
+            System.out.println("No: N");
+            if(Objects.equals(Utils.readString(), "Y")){
+                System.out.println("How good are you?");
+                for (Level levelL : levels) {
+                    System.out.println(levelL.name + ": " + levelL.letter);
+                }
+                levelC=Utils.readString();
+                start= true;
+            }else if(Objects.equals(Utils.readString(), "N")){
+                System.out.print("But... ");
+            } else {
+                System.out.println("da fuq?");
             }
-            start= true;
-        }else if(Objects.equals(Utils.readString(), "N")){
-            System.out.println("Okay, if you want to start press Y");
-        } else {
-            System.out.println("da fuq?");
         }
+        return levelC;
     }
     public static void main(String[] args) {
         //Dummy Data

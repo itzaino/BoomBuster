@@ -14,12 +14,12 @@ random Mines Methode
 Loop through neighbours methode
 
 Ainoa:
-Check Field-Classes & consider Errors
 Check Draw, if-statements, for simplification
 Re-read Game Initiation
- */
+Check Field-Classes & consider Errors
+*/
 public class Main {
-   static Field[][] board;//=new Field[8][8];
+   static Field[][] board=new Field[8][8];
     static Level[] levels= {
             new Level("Beginner",'B',8,10),
             new Level("Intermediate",'I',16,40),
@@ -50,16 +50,11 @@ public class Main {
         return levelC;
     }
     public static void main(String[] args) {
-        //Dummy Data
-        for(Field[] row:board){
-            //!Reference Error!
-            Arrays.fill(row,new Field());
-        }
+        Think.gameInitiation("B");
 
         //testing
         board[1][3].setFlag();
         board[3][0].setFlag();
-        System.out.println(board[3][0].openField());
         board[0][1].openField();
 
         Draw.drawBoard(board);

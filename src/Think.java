@@ -1,6 +1,8 @@
 import types.Field;
 import types.Level;
 
+import java.util.Arrays;
+
 public class Think {
     public static void gameInitiation(String levelC){
         for (Level levelL : Main.levels) {
@@ -9,6 +11,9 @@ public class Think {
             }
         }
         Main.board=new Field[Main.level.fieldSize][Main.level.fieldSize];
+        for(Field[] row:Main.board){
+            Arrays.setAll(row, i->new Field());
+        }
     }
 }
 

@@ -16,7 +16,6 @@ public class Draw {
                     }else {
                         System.out.print(BackgroundColour.green+"    "+BackgroundColour.reset);
                     }
-                    //here if-Statement
                     if(j==1){
                         if(field.flag){
                             System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset);
@@ -32,7 +31,6 @@ public class Draw {
                             System.out.print(BackgroundColour.green+"   "+BackgroundColour.reset);
                         }
                     }
-                    //end if-Statement
                     if(field.open){
                         System.out.print(BackgroundColour.yellow+"    "+BackgroundColour.reset);
                     }else {

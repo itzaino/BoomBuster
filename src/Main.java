@@ -3,7 +3,7 @@ import types.Level;
 
 import java.util.Arrays;
 import java.util.Objects;
-
+//test
 public class Main {
    static Field[][] board =new Field[8][8];
     static Level[] levels= {

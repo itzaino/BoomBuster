@@ -7,7 +7,7 @@ import java.util.Objects;
 Aufgaben:
 
 Bis Freitag:
-Vinzent, Adrian:
+Vincent, Adrian:
 Read Methode --> See Utils
 Mine Randomisation --> See Think
 
@@ -22,7 +22,6 @@ Drawing Numbers
 Questions:
 Where should startPrompt() be?
 Should neighbours be an attribute of Field?
-
 */
 public class Main {
    static Field[][] board=new Field[8][8];

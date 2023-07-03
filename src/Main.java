@@ -14,10 +14,12 @@ random Mines Methode
 Loop through neighbours methode
 
 Ainoa:
-Game Initiation & Draw fixen !!Field Open & Flag
+Check Field-Classes & consider Errors
+Check Draw, if-statements, for simplification
+Re-read Game Initiation
  */
 public class Main {
-   static Field[][] board; //=new Field[8][8];
+   static Field[][] board;//=new Field[8][8];
     static Level[] levels= {
             new Level("Beginner",'B',8,10),
             new Level("Intermediate",'I',16,40),
@@ -55,18 +57,10 @@ public class Main {
         }
 
         //testing
-
         board[1][3].setFlag();
         board[3][0].setFlag();
-        board[3][0].openField();
+        System.out.println(board[3][0].openField());
         board[0][1].openField();
-
-        for(Field[] row:board){
-            for(Field field:row){
-                System.out.print(field.open + " ");
-            }
-            System.out.println();
-        }
 
         Draw.drawBoard(board);
     }

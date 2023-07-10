@@ -3,6 +3,11 @@ import types.Field;
 
 public class Draw {
     public static void drawBoard(Field[][] board){
+        for(int i=0;i<board.length;i++){
+            int f=65+i;
+            System.out.print("     "+Character.toString(f)+"      ");
+        }
+        System.out.println();
         for(Field[] row : board){
             for(int i=0;i<board.length*12;i++){
                 System.out.print("-");

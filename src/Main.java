@@ -9,16 +9,13 @@ Aufgaben:
 
 Bis Freitag:
 Vincent, Adrian:
-Read Methode --> See Utils
-Mine Randomisation --> See Think
-
 Loop through neighbours methode --> See Think & Field
 
 Ainoa:
 Check Field-Classes & consider Errors
-
-Missing:
-Drawing Numbers
+Numbers & Letters on sides
+Numbers in squares
+Intergrate & test
 
 Questions:
 Where should startPrompt() be?
@@ -57,12 +54,13 @@ public class Main {
     }
     public static void main(String[] args) {
         //startPrompt(); //--> move to Think/Draw?
-        Think.gameInitiation("B");
+        Think.gameInitiation("E");
 
-        //testing
+        /*
         board[1][3].setFlag();
         board[3][0].setFlag();
-        board[0][1].openField();
+        board[0][1].openField();*/
+        //Think.mineRandomiser();
 
         Draw.drawBoard(board);
     }

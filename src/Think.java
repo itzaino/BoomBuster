@@ -14,17 +14,17 @@ public class Think {
         for (Field[] row : Main.board) {
             Arrays.setAll(row, i -> new Field());
         }
-        //Mine Randomisation --> see bottom, call here
+        mineRandomiser();
         //Mine Counter --> loop here, function in Field
     }
 
     public static void mineRandomiser() {
         Random random = new Random();
-        while (Level.minesAmount > 0) {
-            Field Field = Main.board[random.nextInt(Main.level.fieldSize)][random.nextInt(Main.level.fieldSize)];
-            if (!(Field.mine)) {
-                Field.mine = true;
-                Level.minesAmount--;
+        while (Main.level.minesAmount > 0) {
+            Field field = Main.board[random.nextInt(Main.level.fieldSize)][random.nextInt(Main.level.fieldSize)];
+            if (!(field.mine)) {
+                field.mine = true;
+                Main.level.minesAmount--;
             }
         }
     }

@@ -1,24 +1,12 @@
 import types.Field;
 import types.Level;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 /*
 Aufgaben:
-
-Bis Freitag:
-Vincent, Adrian:
-Loop through neighbours methode --> See Think & Field
-
-Ainoa:
-Check Field-Classes & consider Errors
-Numbers & Letters on sides
-Numbers in squares
-Intergrate & test
+Assign Numbers --> See Think & Field
+Game Logic
 
 Questions:
-Where should startPrompt() be?
 Should neighbours be an attribute of Field?
 */
 public class Main {
@@ -29,38 +17,16 @@ public class Main {
             new Level("Expert",'E',22,99)
     };
     public static boolean start=false;
-
     static Level level;
-    public static String startPrompt(){
-        String levelC="";
-        while(!start){
-            System.out.println("Do you want to start the game?");
-            System.out.println("Yes: Y");
-            System.out.println("No: N");
-            if(Objects.equals(Utils.readString(), "Y")){
-                System.out.println("How good are you?");
-                for (Level levelL : levels) {
-                    System.out.println(levelL.name + ": " + levelL.letter);
-                }
-                levelC=Utils.readString();
-                start= true;
-            }else if(Objects.equals(Utils.readString(), "N")){
-                System.out.print("But... ");
-            } else {
-                System.out.println("da fuq?");
-            }
-        }
-        return levelC;
-    }
     public static void main(String[] args) {
-        //startPrompt(); //--> move to Think/Draw?
-        Think.gameInitiation("E");
+        Draw.startPrompt();
+        Think.gameInitiation();
 
-        /*
+         tests:
         board[1][3].setFlag();
         board[3][0].setFlag();
-        board[0][1].openField();*/
-        //Think.mineRandomiser();
+        board[0][1].openField();
+        board[0][1].number=3;
 
         Draw.drawBoard(board);
     }

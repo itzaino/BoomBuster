@@ -12,11 +12,7 @@ public class Field {
         open =false;
         mine=false;
         flag=false;
-        number=0;
         colour=BackgroundColour.green;
-    }
-    public void setMine(){
-        mine=true;
     }
     public boolean setFlag(){
         boolean error;

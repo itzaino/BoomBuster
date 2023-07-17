@@ -21,6 +21,8 @@ public class Main {
     public static boolean start=false;
     static Level level;
     public static void main(String[] args) {
+        Draw.gameOverDraw();
+
         Draw.startPrompt();
         Think.gameInitiation();
 

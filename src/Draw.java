@@ -85,6 +85,22 @@ public class Draw {
         System.out.println("-");
     }
     public static void gameOverDraw(){
+        System.out.print(BackgroundColour.red+"               "+BackgroundColour.reset);
+        System.out.print("            ");
+        System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset);
+        System.out.print("            ");
+        System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset+"         "+BackgroundColour.red+"   "+BackgroundColour.reset);
+        System.out.print("      ");
+        System.out.println(BackgroundColour.red+"               "+BackgroundColour.reset);
+
+        System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset);
+        System.out.print("                     ");
+        System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset+"   "+BackgroundColour.red+"   "+BackgroundColour.reset);
+        System.out.print("         ");
+        System.out.print(BackgroundColour.red+"      "+BackgroundColour.reset+"   "+BackgroundColour.red+"      "+BackgroundColour.reset);
+        System.out.print("      ");
+        System.out.println(BackgroundColour.red+"   "+BackgroundColour.reset);
+
 
     }
 

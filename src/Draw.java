@@ -84,4 +84,7 @@ public class Draw {
         }
         System.out.println("-");
     }
+    public static void gameOverDraw(){
+
+    }
 }

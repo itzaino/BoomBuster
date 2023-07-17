@@ -87,4 +87,9 @@ public class Draw {
     public static void gameOverDraw(){
 
     }
+
+    public static void winDraw(){
+
+    }
 }
+

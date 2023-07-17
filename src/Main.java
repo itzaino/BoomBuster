@@ -16,6 +16,8 @@ public class Main {
             new Level("Intermediate",'I',16,40),
             new Level("Expert",'E',22,99)
     };
+
+    public static int openedFields=0;
     public static boolean start=false;
     static Level level;
     public static void main(String[] args) {

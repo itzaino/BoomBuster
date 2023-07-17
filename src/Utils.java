@@ -36,6 +36,9 @@ public class Utils {
             if(y!=-1&&x!=-1){
                 if(inputA[2].equalsIgnoreCase("O")){
                     Main.board[x][y].openField();
+                    if(Main.board[x][y].mine == true){
+                        Draw.gameOverDraw();
+                    }
                 } else if (inputA[2].equalsIgnoreCase("F")) {
                     Main.board[x][y].setFlag();
                 }else{

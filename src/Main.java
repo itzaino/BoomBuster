@@ -11,7 +11,7 @@ Should neighbours be an attribute of Field?
 */
 public class Main {
    static Field[][] board=new Field[8][8];
-    static Level[] levels= {
+    static Level[] levelsy= {
             new Level("Beginner",'B',8,10),
             new Level("Intermediate",'I',16,40),
             new Level("Expert",'E',22,99)

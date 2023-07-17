@@ -4,7 +4,7 @@ import types.Level;
 /*
 Aufgaben:
 Assign Numbers --> See Think & Field
-Game Logic
+Game Over & Win Screen
 
 Questions:
 Should neighbours be an attribute of Field?
@@ -29,5 +29,9 @@ public class Main {
         board[0][1].number=3;
 
         Draw.drawBoard(board);
+        while(true){
+            Utils.readField();
+            Draw.drawBoard(board);
+        }
     }
 }

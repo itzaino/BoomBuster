@@ -67,6 +67,11 @@ public class Think {
                         counter = counter + 1;
                     }
                 }
+                if (x + 1 < Main.level.fieldSize && y > 0){
+                    if (Main.board[x+1][y-1].mine == true){
+                        counter = counter +1;
+                    }
+                }
                 Main.board[x][y].number=counter;
                 counter = 0;
             }

@@ -1,5 +1,7 @@
 package types;
 
+import com.sun.tools.javac.Main;
+
 public class Field {
     public boolean open;
     public boolean mine;
@@ -40,4 +42,5 @@ public class Field {
         }
         return error;
     }
+
 }

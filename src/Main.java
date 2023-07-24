@@ -30,7 +30,7 @@ public class Main {
         board[1][3].setFlag();
         board[3][0].setFlag();
         board[0][1].openField();
-        board[0][1].number=3;
+        //board[0][1].number=3;
 
         Draw.drawBoard(board);
         while(true){

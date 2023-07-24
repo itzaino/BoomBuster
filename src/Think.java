@@ -9,7 +9,7 @@ public class Think {
             Arrays.setAll(row, i -> new Field());
         }
         mineRandomiser();
-        //Mine Counter --> loop here, function in Field
+        NumberOnField();
     }
 
     public static void mineRandomiser() {

@@ -24,6 +24,5 @@ public class Think {
     }
     public static void gameLoop(){
         Draw.drawBoard(Main.board);
-
     }
 }

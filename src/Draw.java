@@ -85,6 +85,8 @@ public class Draw {
         System.out.println("-");
     }
     public static void gameOverDraw(){
+        /*
+        Für ein großes Game over screen
         System.out.print(BackgroundColour.red+"               "+BackgroundColour.reset);
         System.out.print("            ");
         System.out.print(BackgroundColour.red+"   "+BackgroundColour.reset);
@@ -100,12 +102,12 @@ public class Draw {
         System.out.print(BackgroundColour.red+"      "+BackgroundColour.reset+"   "+BackgroundColour.red+"      "+BackgroundColour.reset);
         System.out.print("      ");
         System.out.println(BackgroundColour.red+"   "+BackgroundColour.reset);
-
-
+        */
+        System.out.println(TextColour.red+"GAME OVER!"+TextColour.reset);
     }
 
     public static void winDraw(){
-
+        System.out.println(TextColour.red+"YOU WON!"+TextColour.reset);
     }
 }
 

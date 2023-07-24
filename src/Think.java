@@ -31,7 +31,7 @@ public class Think {
         int counter = 0;
         for (x = 0; x < Main.level.fieldSize; x++){
             for ( y = 0; y < Main.level.fieldSize; y++){
-                if (x > 0 & y > 0) {
+                if (x > 0 && y > 0) {
                     if (Main.board[x - 1][y - 1].mine == true){
                         counter = counter + 1;
                     }
@@ -42,7 +42,7 @@ public class Think {
                     }
 
                 }
-                if (x > 0 & y < Main.level.fieldSize){
+                if (x > 0 && y + 1 < Main.level.fieldSize){
                     if (Main.board[x - 1][y + 1].mine == true){
                         counter = counter + 1;
                     }
@@ -52,17 +52,17 @@ public class Think {
                             counter = counter + 1;
                     }
                 }
-                if (x < Main.level.fieldSize){
+                if (x + 1 < Main.level.fieldSize){
                     if (Main.board[x+1][y].mine == true){
                         counter = counter + 1;
                     }
                 }
-                if (y < Main.level.fieldSize){
+                if (y + 1 < Main.level.fieldSize){
                     if (Main.board[x][y + 1].mine == true) {
                         counter = counter + 1;
                     }
                 }
-                if (x < Main.level.fieldSize & y < Main.level.fieldSize){
+                if (x + 1  < Main.level.fieldSize && y + 1 < Main.level.fieldSize){
                     if (Main.board[x + 1][y + 1].mine == true) {
                         counter = counter + 1;
                     }

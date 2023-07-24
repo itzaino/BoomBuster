@@ -39,9 +39,10 @@ public class Utils {
                 if(y!=-1&&x!=-1){
                     if(inputA[2].equalsIgnoreCase("O")){
                         Main.board[x][y].openField();
-                        if(Main.board[x][y].mine == true){
+                        if(Main.board[x][y].mine){
                             Main.openedFields = 0;
                             Draw.gameOverDraw();
+                            Main.running=false;
                         } else if(!Main.board[x][y].flag){
                             Main.openedFields ++;
                         }
@@ -65,7 +66,9 @@ public class Utils {
     }
 
     public static void WinCondition() {
-        if(((Main.level.fieldSize * Main.level.fieldSize)-Main.level.minesAmount)==Main.openedFields)
+        if(((Main.level.fieldSize * Main.level.fieldSize)-Main.level.minesAmount)==Main.openedFields){
             Draw.winDraw();
+            Main.running=false;
+        }
     }
 }

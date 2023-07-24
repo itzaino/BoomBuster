@@ -19,6 +19,7 @@ public class Main {
 
     public static int openedFields=0;
     public static boolean start=false;
+    public static boolean running=true;
     static Level level;
     public static void main(String[] args) {
         //Draw.gameOverDraw();
@@ -27,15 +28,17 @@ public class Main {
         Think.gameInitiation();
 
          tests:
-        board[1][3].setFlag();
-        board[3][0].setFlag();
-        board[0][1].openField();
+        //board[1][3].setFlag();
+        //board[3][0].setFlag();
+        //board[0][1].openField();
         //board[0][1].number=3;
 
         Draw.drawBoard(board);
-        while(true){
-            Utils.readField();
+        Utils.readField();
+        while(running){
             Draw.drawBoard(board);
+            Utils.readField();
+            Utils.WinCondition();
         }
     }
 }
